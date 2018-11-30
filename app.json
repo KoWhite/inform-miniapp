@@ -1,12 +1,32 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/infos/info",
+    "pages/index/index"
+    
+
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#2c2c2c",
+    "selectedColor": "#2c2c2c",
+    "list": [
+      {
+        "pagePath": "pages/infos/info",
+        "text": "通知",
+        "iconPath": "images/tabBar/kb.png",
+        "selectedIconPath": "images/tabBar/kbselect.png"
+      },
+      {
+        "pagePath": "pages/infos/info",
+        "text": "我",
+        "iconPath": "images/tabBar/kb.png",
+        "selectedIconPath": "images/tabBar/kbselect.png"
+      }
+    ]
   }
 }

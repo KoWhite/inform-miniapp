@@ -1,0 +1,66 @@
+@import "infos-list/info-list-template.wxss";
+
+.spoHide{
+    display: none;
+}
+
+.eduShow{
+    display: block;
+}
+
+.info-change {
+    height: 45rpx;
+    padding-left: 30rpx;
+    padding-top: 65rpx;
+}
+
+.info-name {
+    float: left;
+    font-size: 45rpx;
+}
+
+.change-icon {
+    float: left;
+    margin-top: 6rpx;
+    margin-left: 18rpx;
+    width: 50rpx;
+    height: 50rpx;
+    background-size: 50rpx 50rpx;
+    background-repeat: repeat;
+}
+
+.info-number {
+    height: 130rpx;
+    width: 250rpx;
+    padding-top: 70rpx;
+    padding-left: 30rpx;
+}
+
+.info-title{
+    font-size: 30rpx;
+}
+
+.number {
+    float: left;
+    font-size: 120rpx;
+    
+}
+
+.info-title2 {
+    float: left;
+    padding-top: 90rpx;
+    margin-left: 15rpx;
+    font-size: 30rpx;
+}
+
+.update-time {
+    margin-left: 30rpx;
+    margin-top: 70rpx;
+    height: 80rpx;
+    opacity: 0.9;
+    font-size: 35rpx;
+}
+
+.footer{
+    margin-top: 120rpx;
+}

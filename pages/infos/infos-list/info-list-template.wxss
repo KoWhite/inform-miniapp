@@ -1,0 +1,38 @@
+.info-card{
+    display: flex;
+    margin-bottom: 35rpx;
+    width: 90%;
+    margin-left: 5%;
+    height: 140rpx;
+    border-radius: 10rpx;
+    box-shadow: 1rpx 2rpx 10rpx 5rpx rgb(204, 220, 226);
+}
+
+.card-image {
+    width: 10rpx;
+    height: 100%;
+    background: red;
+    border-top-left-radius: 10rpx;
+    border-bottom-left-radius: 10rpx;
+}
+
+.card-content {
+    overflow: hidden;
+    margin-left: 30rpx;
+    margin-top: 25rpx;
+    flex: 1;
+}
+
+.card-title {
+    display: block;
+    font-weight: bold; 
+    font-size: 30rpx;
+    letter-spacing: 3rpx;
+    height: 50rpx;
+}
+
+.card-time {
+    height: 25rpx;
+    font-weight: lighter;
+    font-size: 25rpx;
+}

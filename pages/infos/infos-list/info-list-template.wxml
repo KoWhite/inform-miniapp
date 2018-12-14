@@ -1,0 +1,16 @@
+<import src="../infos-card/info-card-template.wxml"></import>
+
+<template name="infoListTemplate">
+    <view class="infos-main">
+        <view class="info-card">
+                <view 
+                    class="card-image"
+                    style="background-color:{{randomColor}}" 
+                ></view>
+            <view class="card-content">
+                <text class="card-title">{{title}}</text>
+                <text class="card-time">{{infoTime}}</text>
+            </view>
+        </view>
+    </view>
+</template>

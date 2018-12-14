@@ -1,0 +1,14 @@
+<!-- 讲究先静后动，先样式后数据 -->
+<view class="info-detail">
+    <view class="header" style="background: linear-gradient(#5A9DE8,#a8cbf3);">
+        <view class="container">
+            <view class="title">2018年下半年全国</view>
+            <view class="message">
+                <text class="author">发布人：厦门大学嘉庚学院教务部</text>
+                <text class="info-time">2019/12/1</text>
+            </view>
+            <view class="info-content">为深化本科教学改革，全力营造因材施教、因势利导、尊重个性、激发潜能的教育环境，进一步完善公共外语教学体系，我校从2013-2014学年第一学期开始，在原开设《大学英语》课程的基础上，增设《大学日语》作为全校公共外语课程，详见《厦门大学嘉庚学院公共外语课程修读办法》。根据办法规定，“学生在读期间，需要变更第一公共外语语种的，需在每学期选课前根据教务部通知提交《公共外语语种变更申请表》，逾期不再受理”。</view>
+        </view>
+    </view>
+    
+</view>

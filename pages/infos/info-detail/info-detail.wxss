@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    margin-top: 30rpx;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 30rpx;
+    background: #ffffff;
+    color: dimgray;
+    box-shadow: 1rpx 2rpx 10rpx 5rpx rgb(204, 220, 226);
+}

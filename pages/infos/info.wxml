@@ -1,3 +1,68 @@
-<view class="body">
-    hello world
+<import src="infos-list/info-list-template.wxml" />
+
+<!-- 教务部通知视图层 -->
+<view class="eduBody {{showView?'eduShow':'spoHide'}}">
+    <view class="header" style="background: linear-gradient(#5A9DE8,#a8cbf3);">
+        <view class="info-change">
+            <view class="info-name">教务部</view>
+            <images 
+                class="change-icon" 
+                style="background-image:url(../../images/tabBar/change.png);"
+                bindtap='showButton'
+                animation="{{rotateData}}"
+            >
+            </images>
+        </view>
+        <view class="info-number">
+            <view class="info-title">通知数</view>
+            <view class="number">10</view>
+            <view class="info-title2">个</view>
+        </view>
+        <view class="update-time">
+            <text class="update-title">最近更新时间：</text>
+            <text class="recent-time">2019-10-10</text>
+        </view>
+    </view>
+
+    <block wx:for="{{infoList}}" wx:for-item="item" wx:for-index="idx" wx:key="idx">
+        <view catchtap="onInfoTap" data-infoId="{{item.infoId}}">
+            <template is="infoListTemplate" data="{{...item}}"></template>
+        </view>
+    </block>
+    <i-load-more class="footer" loading="{{ false }}" />
 </view>
+
+<!-- 体育部通知视图层 -->
+<view class="spoBody {{showView?'spoHide':'eduShow'}}">
+    <view class="header" style="background: linear-gradient(#7be85a,#b9f3a7);">
+        <view class="info-change">
+            <view class="info-name">体育部</view>
+            <images
+                class="change-icon" 
+                style="background-image:url(../../images/tabBar/change.png);"
+                bindtap='showButton'
+                animation="{{animation}}"
+            >
+            </images>
+        </view>
+        <view class="info-number">
+            <view class="info-title">通知数</view>
+            <view class="number">{{infoList[infoList.length-1].infoId}}</view>
+            <view class="info-title2">个</view>
+        </view>
+        <view class="update-time">
+            <text class="update-title">最近更新时间：</text>
+            <text class="recent-time">{{infoList[0].infoTime}}</text>
+        </view>
+    </view>
+
+    <block wx:for="{{infoList}}" wx:for-item="item" wx:for-index="idx" wx:key="idx">
+        <view catchtap="onInfoTap" data-infoId="{{item.infoId}}">
+            <template is="infoListTemplate" data="{{...item}}"></template>
+        </view>
+    </block>
+
+    <i-load-more class="footer" loading="{{ false }}" />
+</view>
+    
+
